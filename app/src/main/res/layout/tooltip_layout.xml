@@ -7,7 +7,6 @@
         android:layout_height="wrap_content"
         android:background="@android:color/transparent">
 
-
         <ImageView
             android:id="@+id/ic_arrow"
             android:layout_width="wrap_content"
@@ -16,10 +15,7 @@
             android:translationY="5dp"
             app:layout_constraintBottom_toTopOf="@id/cl_content"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent">
-
-
-        </ImageView>
+            app:layout_constraintRight_toRightOf="parent" />
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/cl_content"
@@ -50,10 +46,10 @@
                     android:gravity="start"
                     android:lineHeight="20dp"
                     android:paddingEnd="35dp"
-                    app:mixedText="@{`\uD83D\uDD25 Yeni: M10 ilə balansını anında artır! Kliklə, üzv nömrəni və məbləği daxil et - tam komissiyasız, balansın dərhal artsın!`}"
-                    app:semiboldParts="@{`Yeni: M10 ilə balansını anında artır!|tam komissiyasız`}"
-                    android:textColor="#111318"
-                    android:textSize="16sp" />
+                    android:textColor="@color/tooltip_text_color"
+                    android:textSize="16sp"
+                    app:mixedText="@{@string/m10_tooltip_text}"
+                    app:semiboldParts="@{`Yeni: M10 ilə balansını anında artır!|tam komissiyasız`}" />
 
                 <com.google.android.material.card.MaterialCardView
                     android:id="@+id/cv_close_tooltip"
@@ -61,7 +57,7 @@
                     android:layout_height="wrap_content"
                     android:layout_gravity="end"
                     android:layout_marginRight="8dp"
-                    android:backgroundTint="#00000000"
+                    android:backgroundTint="@color/transparent"
                     app:strokeWidth="0dp">
 
                     <TextView
@@ -73,15 +69,12 @@
                         android:lineHeight="20dp"
                         android:paddingHorizontal="13dp"
                         android:paddingVertical="8dp"
-                        android:text="Close"
+                        android:text="@string/close_tooltip_button"
                         android:textColor="#189AC5"
                         android:textSize="12sp" />
-
                 </com.google.android.material.card.MaterialCardView>
 
-
             </LinearLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

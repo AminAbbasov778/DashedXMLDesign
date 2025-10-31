@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">DashedXMLDesign</string>
+    <string name="m10_transfer_button">M10-la pul köçür</string>
+    <string name="m10_tooltip_text">🔥 Yeni: M10 ilə balansını anında artır! Kliklə, üzv nömrəni və məbləği daxil et - tam komissiyasız, balansın dərhal artsın!</string>
+    <string name="close_tooltip_button">Close</string>
+
 </resources>

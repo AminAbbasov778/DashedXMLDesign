@@ -1,11 +1,7 @@
 package com.example.dashedxmldesign
 
 import android.os.Bundle
-import android.view.Gravity
-import android.view.LayoutInflater
-import android.view.View
 import android.view.ViewGroup.LayoutParams
-import android.widget.Button
 import android.widget.PopupWindow
 import androidx.appcompat.app.AppCompatActivity
 import com.example.dashedxmldesign.databinding.ActivityMainBinding
@@ -26,15 +22,13 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun showTooltip() {
-        val tooltipBinding  =  TooltipLayoutBinding.inflate(layoutInflater)
-       tooltipBinding.root
+        val tooltipBinding = TooltipLayoutBinding.inflate(layoutInflater)
+        tooltipBinding.root
 
-            tooltipBinding.closeTooltip.setOnClickListener {
+        tooltipBinding.closeTooltip.setOnClickListener {
             hideTooltipAndBorder()
+
         }
-
-
-
 
         val marginHorizontalDp = 20
         val density = resources.displayMetrics.density
@@ -53,8 +47,6 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-
-
     }
 
     private fun hideTooltipAndBorder() {
@@ -62,10 +54,6 @@ class MainActivity : AppCompatActivity() {
         tooltipPopup = null
         mainBinding.buttonContainer.background = null
     }
-
-
-
-
 
 
     override fun onDestroy() {
